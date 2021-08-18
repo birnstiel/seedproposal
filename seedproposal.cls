@@ -6,7 +6,7 @@
 
 \ProcessOptions\relax
 \LoadClass[
-    numbers=endperiod
+    numbers=endperiod,
     version=last]{scrartcl}
 
 \RequirePackage{babel}
@@ -55,9 +55,12 @@
 
 % add logo
 \AddToShipoutPictureBG*{%
-    \AtPageUpperLeft{%
-        \put(.65\paperwidth,-.2\paperheight){\includegraphics[scale=0.5]{Logo_Origins_RGB.jpg}}
+  \AtPageUpperLeft{%
+    \raisebox{-1.25\height}{%
+    \hspace*{0.95\hsize}%
+    \includegraphics[width=6cm]{Logo_Origins_RGB.jpg}%
     }%
+  }
 }
 
 % command to typeset proposal data
